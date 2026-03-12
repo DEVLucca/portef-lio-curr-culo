@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Currículo - Lucca Pontes Menezes</title>
+  <title>Lucca Pontes Menezes - Portfolio</title>
+  
+  <link rel="icon" href="imagens/LuccaPontesmenezes.jpeg" type="image/jpeg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
   <canvas id="particleCanvas"></canvas>
 
-
-  <div class="patinho">
-    <img src="imagens/Happy Art Sticker.gif" alt="Patinho animado" class="patinho-icon">
-  </div>
-
   <header>
     <div class="header-container">
       <div class="top-left">
         <div class="foto-perfil">
-          <img src="imagens/LuccaPontesmenezes.jpeg" alt="Foto de Lucca Pontes Menezes">
+          <img src="imagens/LuccaPontesmenezes.jpeg" alt="Lucca Pontes Menezes Photo">
         </div>
         <div class="nome">
           <h1>Lucca Pontes Menezes</h1>
-          <p>| Engenheiro de Computação |</p>
+          <p>| Software Engineer Student & Back-end Developer |</p>
+          <a href="Lucca_CV.pdf" target="_blank" class="btn-cv"><i class="fas fa-file-download"></i> Download Resume</a>
         </div>
       </div>
       <div class="menu">
         <nav>
           <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#educacao">Formação</a></li>
-            <li><a href="#experiencia">Experiência</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education & Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -41,96 +44,107 @@
   </header>
 
   <main>
-    <section id="engenharia" class="balao">
-      <div class="engenharia-container">
-        <div class="engenharia-imagem">
-          <img src="imagens/programming-background-with-person-working-with-codes-computer.jpg" alt="Engenharia da Computação">
+    <section id="about" class="balao">
+      <h2>About Me</h2>
+      <p>I am a Computer Engineering student (expected graduation: 2026) with a strong passion for back-end development and network infrastructure. Alongside my programming skills in Java, Python, and C, I possess advanced practical knowledge in computer networks, including OSPF routing and Datacom equipment configuration. I am highly skilled in network troubleshooting, effectively identifying and resolving link flaps and GBIC issues. Currently expanding my skills to become a Full Stack Developer, I am highly motivated to leverage my comprehensive background in both software and infrastructure to solve complex, real-world challenges in a dynamic tech environment.</p>
+    </section>
+
+    <section id="projects" class="balao">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        
+        <div class="project-card">
+          <div class="project-img">
+            <img src="imagens/healtymed.jpeg" alt="Medical E-Learning Platform">
+          </div>
+          <div class="project-info">
+            <h3>Medical E-Learning Platform</h3>
+            <p class="tech-stack"><strong>Tech Stack:</strong> Next.js, TypeScript, Node.js, Docker, PostgreSQL (Supabase), Mux</p>
+            <p>Developed and successfully sold a custom e-learning platform tailored for medical students. Engineered a scalable architecture using Node.js and Next.js, integrating Supabase for secure database management and authentication. Implemented high-quality video streaming via the Mux API and containerized the environment with Docker for optimized deployment.</p>
+            <div class="project-links">
+              <span class="btn-project" style="border-color: #555; color: #aaa; cursor: default; background: transparent; pointer-events: none;">
+                <i class="fas fa-lock"></i> Proprietary Software (Sold)
+              </span>
+            </div>
+          </div>
         </div>
-        <div class="engenharia-texto">
-          <h2>O que é Engenharia da Computação?</h2>
-          <p>
-            Engenharia da Computação é uma área que integra os conhecimentos da engenharia elétrica com os da ciência da computação. O profissional projeta, desenvolve e mantém sistemas computacionais – incluindo hardware e software – sendo capacitado para atuar com redes, automação, robótica, inteligência artificial, sistemas embarcados, entre outras áreas tecnológicas.
-          </p>
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="imagens/cognull.jpeg" alt="Cognull Website" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400&h=200'">
+          </div>
+          <div class="project-info">
+            <h3>Cognull - Digital Solutions</h3>
+            <p class="tech-stack"><strong>Tech Stack:</strong> Next.js, React, Node.js, Vercel</p>
+            <p>Co-founded and developed a software development agency focused on delivering innovative digital solutions. Engineered the company's institutional website and currently manage client projects, applying full-stack development skills to create scalable, high-performance web applications.</p>
+            <div class="project-links">
+              <a href="https://cognull.vercel.app/" target="_blank" class="btn-project"><i class="fas fa-external-link-alt"></i> Visit Website</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills" class="balao">
+      <h2>Technical Skills</h2>
+      <div class="habilidades-container">
+        <div class="habilidades-texto">
+          <ul>
+            <li><i class="fab fa-java"></i> <strong>Backend:</strong> Java, Node.js, Python, C</li>
+            <li><i class="fab fa-html5"></i> <strong>Frontend:</strong> Next.js, TypeScript, React, HTML, JavaScript</li>
+            <li><i class="fas fa-database"></i> <strong>Database & DevOps:</strong> PostgreSQL, Supabase, Docker, Vercel</li>
+            <li><i class="fas fa-network-wired"></i> <strong>Infrastructure & Networking:</strong> OSPF Routing (Datacom), Network Troubleshooting (GBIC faults, Link Flaps)</li>
+            <li><i class="fas fa-language"></i> <strong>Languages:</strong> Portuguese (Native), English (B1 - Actively studying for B2)</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="sobre" class="balao">
-      <h2>Sobre</h2>
-      <p>Sou Lucca Pontes Menezes, estudante de Engenharia da Computação, com interesse em desenvolvimento backend. Tenho experiência com Java, Python e C. Busco evoluir para me tornar desenvolvedor Full Stack, com curiosidade por cybersegurança e tecnologias emergentes.</p>
-    </section>
-
-    <section id="educacao" class="balao">
-      <div class="formacao-container">
-        <div class="formacao-texto">
-          <h2>Formação Acadêmica</h2>
-          <p>Ensino Médio completo. Cursando Bacharelado em Engenharia da Computação na Uniube - Uberaba - MG.</p>
-          <p>Data de início: 02/2022 - Previsão de conclusão: 12/2027.</p>
-        </div>
-        <div class="formacao-logo">
-          <img src="imagens/logouniube.jpg" alt="Logo da Uniube">
-        </div>
-      </div>
-    </section>
-    <section id="experiencia">
+    <section id="education">
       <div class="balao">
-        <h2>Experiência de Trabalho</h2>
+        <h2>Education & Experience</h2>
         <div class="experiencia-container">
           <div class="experiencia-texto">
-            <h3><strong>Assistente de Produção</strong></h3>
-            <p>Gafs Uberaba - MG</p>
+            
+            <h3><strong>Bachelor of Science in Computer Engineering</strong></h3>
+            <p>Uniube - Uberaba, MG, Brazil | <em>02/2022 – Expected: 2026</em></p>
+            <br>
+
+            <h3><strong>Network Infrastructure Intern</strong></h3>
+            <p>TMKnet (ISP) - Uberaba, MG, Brazil</p>
             <ul>
-              <li>Trabalhei nas áreas de produção, acabamento e instalação.</li>
+              <li>Assisted in the configuration, monitoring, and maintenance of network infrastructure using Datacom equipment.</li>
+              <li>Performed daily network troubleshooting, successfully identifying and resolving physical and logical issues such as link flaps and GBIC faults.</li>
+              <li>Worked hands-on with OSPF routing protocols to ensure high availability and network stability for the provider.</li>
             </ul>
-    
-            <h3><strong>Produção</strong></h3>
-            <p>Rental Y</p>
+            <br>
+
+            <h3><strong>Production Assistant</strong></h3>
+            <p>Gafs & Rental Y - Uberaba, MG, Brazil</p>
             <ul>
-              <li>Atuei na parte final da produção (encaixotamento e montagem de paletes).</li>
+              <li>Maintained high organizational standards and teamwork in fast-paced production environments.</li>
+              <li>Developed strong attention to detail and a cooperative mindset to ensure final product quality.</li>
             </ul>
-    
-            <h3><strong>Desenvolvedor</strong></h3>
-            <p>Em busca de oportunidades</p>
-            <ul>
-              <li>Atualmente aprimorando minhas habilidades. Estou focado em adquirir experiência profissional na área de desenvolvimento.</li>
-            </ul>
+
           </div>
         </div>
       </div>
     </section>
-    
 
-    <section id="habilidades" class="balao">
-      <h2>Habilidades</h2>
-      <div class="habilidades-container">
-        <div class="habilidades-texto">
-          <ul>
-            <li><i class="fab fa-java"></i> Java</li>
-            <li><i class="fab fa-python"></i> Python</li>
-            <li><i class="fas fa-c"></i> C</li>
-            <li><i class="fab fa-html5"></i> HTML</li>
-            <li><i class="fas fa-language"></i> Inglês Intermediário</li>
-            <li><i class="fas fa-car"></i> Carteira de Motorista Tipo B</li>
-          </ul>
-        </div>
-        <div class="habilidades-imagem">
-          <img src="imagens/linguagens.avif" alt="Ilustração de programação" loading="lazy"/>
-        </div>
-      </div>
-    </section>
-
-    <section id="contato" class="balao">
-      <h2>Contato</h2>
+    <section id="contact" class="balao">
+      <h2>Contact</h2>
       <ul>
-        <li><i class="fas fa-home"></i> <strong>Endereço:</strong> Rua Alameda Cobre, nº 282, Bairro Grande Horizonte, Uberaba - MG</li>
+        <li><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Uberaba, MG - Brazil</li>
         <li><i class="fab fa-google"></i> <strong>Email:</strong> <a href="mailto:luccapontesmenezes.dev@gmail.com">luccapontesmenezes.dev@gmail.com</a></li>
-        <li><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lucca-dev-818a94328" target="_blank">Lucca.Dev</a></li>
+        <li><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lucca-pontes-menezes-engenheiro" target="_blank">Lucca Pontes Menezes</a></li>
+        <li><i class="fab fa-github"></i> <strong>GitHub:</strong> <a href="https://github.com/SEU_USUARIO" target="_blank">github.com/SEU_USUARIO</a></li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Lucca Pontes Menezes.</p>
+    <p>&copy; 2026 Lucca Pontes Menezes. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
